@@ -1,0 +1,12 @@
+
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light">GifsApp</h3>
+  <hr class="text-white">
+
+  <div class="list-group list-reset">
+    <button *ngFor="let i of tags" (click)="repeatTitle(i)" class="list-group-item list-group-item-action">
+     {{ i | titlecase }}
+    </button>
+  </div>
+</div>
+<!-- titlecase es un pipes que hace que las palabras aparezcan con la primera letra capitalizada -->
